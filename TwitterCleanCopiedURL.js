@@ -29,7 +29,7 @@
                     navigator.clipboard
                         .writeText(cleanURL)
                         .then(() => {/*link copied*/})
-                        .catch(() => { console.error(""); });
+                        .catch(() => { console.error("Failed to write to clipboard"); });
                 }
             }).catch(err => {
                 console.error('Failed to read clipboard: ', err);
